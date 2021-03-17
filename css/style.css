@@ -1,0 +1,25 @@
+body {
+  background: #f9e933;
+  width: 855px;
+  margin: auto;
+}
+header,
+main,
+footer {
+  min-width: 855px;
+}
+header .container,
+main .container,
+footer .container {
+  width: 855px;
+  margin: auto;
+}
+header {
+  background: white;
+}
+main {
+  background: white;
+}
+main img {
+  /* width: 100%; */
+}
