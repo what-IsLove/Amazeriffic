@@ -1,12 +1,17 @@
+/* *{
+  padding: 10px;
+} */
 body {
   background: #f9e933;
   width: 855px;
   margin: auto;
+  font-size: 100%;
 }
 header,
 main,
 footer {
   min-width: 855px;
+  padding: 10px;
 }
 header .container,
 main .container,
@@ -26,7 +31,7 @@ main img {
 
 header {
   background: white;
-  overflow: auto;
+  overflow: hidden;
 }
 header h1,
 h2,
@@ -39,4 +44,14 @@ header nav,
 header img {
   float: right;
   width: 285px;
+} 
+h1,h2,h3,h4{
+  font-family: 'Ubuntu', sans-serif;
+}
+a{
+  color: red;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
 }
