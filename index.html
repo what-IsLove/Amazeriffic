@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
-  
+
 </head>
 
 <body>
@@ -28,18 +28,21 @@
 
   <main>
     <div class="container">
-      <h2>Amazeriffic изменит вашу жизнь!</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <h3>Почему вам нужен Amazeriffic?</h3>
-      <ul>
-        <li>Он легко впишется в вашу жизнь</li>
-        <li>Он классный</li>
-        <li>Он перевернет ваш мир</li>
-      </ul>
-      <img src="lamp.jpg" alt="Изображение   лампочки" />
+      <div class="tabs">
+        <a href="#"><span class="active">Новые</span></a>
+        <a href="#"><span>Старые</span></a>
+        <a href="#"><span>Добавить</span></a>
+      </div>
+      <div class="content">
+        <ul>
+          <li>Купить продукты</li>
+          <li>Обновить несколько новых задач</li>
+          <li>Подготовиться к лекции в понедельник</li>
+          <li>Ответить на письма нанимателей в LinkedIn</li>
+          <li>Вывести Грейси на прогулку в парк</li>
+          <li>Закончить писать книгу</li>
+        </ul>
+      </div>
     </div>
   </main>
 
@@ -76,6 +79,8 @@
       </div>
     </div>
   </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
