@@ -21,5 +21,22 @@ main {
   background: white;
 }
 main img {
-  /* width: 100%; */
+  width: 100px;
+}
+
+header {
+  background: white;
+  overflow: auto;
+}
+header h1,
+h2,
+p,
+h3 {
+  float: left;
+  width: 570px;
+}
+header nav,
+header img {
+  float: right;
+  width: 285px;
 }
