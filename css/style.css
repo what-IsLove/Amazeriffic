@@ -80,7 +80,7 @@ a:hover {
 .tabAddContent{
   
   padding: 20px 0 10px 10px;
-  background-color: rgb(66, 221, 79);
+  /* background-color: rgb(66, 221, 79); */
 }
 .tabAddContent input{
   margin-right: 10px;
