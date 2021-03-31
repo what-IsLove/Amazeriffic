@@ -21,7 +21,7 @@ var main = function () {
                 $content = $("<ul>");
                 for (var i = toDos.length; i > -1; i--) {
                     $content.append($("<li>").text(toDos[i]));
-                }
+                };
                 $("main .content").append($content);
             } else if ($element.parent().is(":nth-child(2)")) {
                 $content = $("<ul>");
@@ -31,10 +31,20 @@ var main = function () {
                 $("main .content").append($content);
             } else if ($element.parent().is(":nth-child(3)")) {
                 $content = $("<div>");
+                $content.addClass("tabAddContent");
                 $content.append($("<input>").text(""));
                 $content.append($("<button>").text("+"));
-                console.log("Щелчок на третьей вкладке!");
                 $("main .content").append($content);
+
+                $('.tabAddContent').each(function () {
+                    $('.tabAddContent button').on("click", function () {
+                        if($('.tabAddContent input').val()!=""){
+                            toDos.push($('.tabAddContent input').val());
+                            // $('.tabAddContent input').empty();
+                        }
+                        return false;
+                    });
+                });
             }
             return false;
         });

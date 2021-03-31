@@ -58,6 +58,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.sitemap ul{
+  float: right;
+  width: 285px;
+}
+
 /* Практика 4 */
 .tabs a span {
   display: inline-block;
@@ -70,4 +75,17 @@ a:hover {
 }
 .tabs a span.active {
   background: #eee;
+}
+
+.tabAddContent{
+  
+  padding: 20px 0 10px 10px;
+  background-color: rgb(66, 221, 79);
+}
+.tabAddContent input{
+  margin-right: 10px;
+  width: 200px;
+}
+.tabAddContent button{
+  width: 100px;
 }
