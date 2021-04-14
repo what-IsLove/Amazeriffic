@@ -89,3 +89,31 @@ a:hover {
 .tabAddContent button{
   width: 100px;
 }
+
+/* Практика 5 */
+
+main .content ul{
+  padding: 5px;
+}
+main .content ul li{
+  color: chocolate;
+  position: relative;
+  padding-left: 20px;
+}
+main .content ul li::before{
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(148, 38, 38);
+
+}
+main .content .tagsH4{
+
+  width: 90%;
+  /* background-color: rgb(243, 183, 183); */
+  text-transform: uppercase;
+}
