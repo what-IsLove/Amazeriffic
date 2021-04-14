@@ -117,3 +117,7 @@ main .content .tagsH4{
   /* background-color: rgb(243, 183, 183); */
   text-transform: uppercase;
 }
+
+.content p{
+  float: none;
+}
