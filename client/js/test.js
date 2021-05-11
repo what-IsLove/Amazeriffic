@@ -29,6 +29,5 @@ $(document).ready(function () {
     $.getJSON("todos.json", function (toDoObjects) {
         main(toDoObjects);
     });
-    
 });
 

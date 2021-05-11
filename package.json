@@ -1,0 +1,22 @@
+{
+  "name": "amazeriffic",
+  "version": "1.0.0",
+  "description": "laba",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/what-IsLove/Amazeriffic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/what-IsLove/Amazeriffic/issues"
+  },
+  "homepage": "https://github.com/what-IsLove/Amazeriffic#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
