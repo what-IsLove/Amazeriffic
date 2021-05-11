@@ -1,123 +1,228 @@
-/* *{
-  padding: 10px;
-} */
 body {
-  background: #f9e933;
-  width: 855px;
-  margin: auto;
-  font-size: 100%;
-}
-header,
-main,
-footer {
-  min-width: 855px;
-  padding: 10px;
-}
-header .container,
-main .container,
-footer .container {
-  width: 855px;
-  margin: auto;
-}
-header {
-  background: white;
-}
-main {
-  background: white;
-}
-main img {
-  width: 100px;
+	background: #f9e933; 
+	font-family: Ubuntu;
+	font-size: 100%;
 }
 
-header {
-  background: white;
-  overflow: hidden;
+.title{
+	font-size: 120%;
+	text-decoration: none;
+	float: left;
+	width: 570px;
+	font-size: 300%;
+	font-style: italic;
+	color: black;
 }
-header h1,
-h2,
-p,
-h3 {
-  float: left;
-  width: 570px;
+.title:hover {
+	color: red;
+	text-decoration: none;
 }
-header nav,
-header img {
-  float: right;
-  width: 285px;
-}
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Ubuntu", sans-serif;
-}
+
 a {
-  color: red;
-  text-decoration: none;
+	text-decoration: none;
+	color: red;
 }
 a:hover {
-  text-decoration: underline;
-}
-.sitemap ul{
-  float: right;
-  width: 285px;
+	text-decoration: underline;
+	color: red;
 }
 
-/* Практика 4 */
+h1, h2, h3, h4 {
+	font-size: 120%;
+}
+
+header, main, footer { 
+	min-width: 855px;
+}
+
+header .container, aside .container, main .container, footer .container { 
+	max-width: 1200px;
+	margin: auto;
+}
+
+main .authorization {
+	max-width: 1200px;
+	background: #ddd; 
+	/*padding-top: 10px; */
+	margin: auto;
+	border-radius: 5px;
+	/*border-radius: 5px 5px 0 0; */
+}
+
+main .authorization p {
+	padding: 15px; 	
+	padding-bottom: 0px;
+	/*padding-left: 15px;*/
+	font-size:20px;
+	color: red;
+}
+
+main .authorization input {
+	font-family: Ubuntu;
+	margin: 10px; 
+	font-size:18px;
+	padding: 5px;
+	padding-right : 60px;
+	border: 2px solid black;
+	border-radius: 8px;
+}
+
+main .authorization button {
+	font-family: Ubuntu;
+	top: 50px;
+	left: 50px;  /*расстояние от края*/
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px; 
+	text-align: center; 
+	float : right;
+}
+
+header { 
+	background: white; 
+	overflow: auto;
+	margin-bottom: 3px;
+	padding: 10px;
+}
+header nav {
+	float: right;
+	/*width: 285px;*/
+	padding-top: 15px;
+	font-size: 20px;
+}
+aside {
+	background: white;
+	overflow: auto;
+	padding: 20px;
+	margin-bottom: 3px;
+}
+
+main { 
+	background: white; 
+	overflow: auto;
+	padding: 20px;
+}
+main .main_block {
+	float: left;
+	width: 570px;
+}
+main .image {
+	float: right;	
+	width: 285px;
+}
+main .faq {
+	float: left;
+}
+main .faq p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+main h2 {
+	font-size: 120%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+main h3 {
+	margin-top: 10px;
+	margin-bottom: 5px;	
+}
+
+ul{
+	list-style: circle;
+	list-style-position: inside;
+}
+
+footer {
+	overflow: auto;
+	padding: 10px;
+	font-size: 18px;
+}
+footer .contact {
+	float: left;
+	width: 570px;
+}
+footer .sitemap {
+	float: right;	
+	width: 285px;
+}
+footer h5 {
+	padding-bottom: 10px;
+}
+
 .tabs a span {
-  display: inline-block;
-  border-radius: 5px 5px 0 0;
-  width: 100px;
-  margin-right: 10px;
-  text-align: center;
-  background: #ddd;
-  padding: 5px;
-}
-.tabs a span.active {
-  background: #eee;
-}
-
-.tabAddContent{
-  
-  padding: 20px 0 10px 10px;
-  /* background-color: rgb(66, 221, 79); */
-}
-.tabAddContent input{
-  margin-right: 10px;
-  width: 200px;
-}
-.tabAddContent button{
-  width: 100px;
-}
-
-/* Практика 5 */
-
-main .content ul{
-  padding: 5px;
-}
-main .content ul li{
-  color: chocolate;
-  position: relative;
-  padding-left: 20px;
-}
-main .content ul li::before{
-  content: "";
-  position: absolute;
-  top: 20%;
-  left: 0%;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: rgb(148, 38, 38);
+	display: inline-block; 
+	border-radius: 5px 5px 0 0; 
+	width: 150px; 
+	margin-right: 10px; 
+	text-align: center; 
+	font-size:20px;
+	background: #ccc; 
+	padding: 10px;
 
 }
-main .content .tagsH4{
-
-  width: 90%;
-  /* background-color: rgb(243, 183, 183); */
-  text-transform: uppercase;
+.tabs a span.active { 
+	background: #ddd; 
 }
 
-.content p{
-  float: none;
+.content {
+	background: white;
+	padding-bottom: 10px;
 }
+.content li{
+	list-style: none;
+	margin:  10px;
+	padding-left: 5px;
+	font-size:20px;
+	border: right;
+	padding: 10px;
+	box-shadow: 0 0 0 10px #ddd;
+}
+.content p {
+	padding: 15px; 	
+	font-size:20px;
+	color: red;
+}
+.content input {
+	font-family: Ubuntu;
+	width: 1160px;
+	margin: 10px;
+	padding: 10px;
+	font-size:  20px;
+	box-shadow: 0 0 0 10px #ddd;
+}
+.content h3 {
+	margin: 10px;
+}
+.content button {
+	font-family: Ubuntu;
+	font-size: 24px;
+	margin: 10px;
+	margin-top: 30px;
+	width: 20%;
+	padding: 10px;
+	background: white;
+	box-shadow: 0 0 0 10px #ddd;
+}
+
+.linkEdit {
+	display: inline-block;
+	float: right;
+	padding-left: 15px; 
+}
+.linkEdit:hover {
+	background: red;
+	color: white;
+	text-decoration: none;
+} 
+.linkRemove {
+	display: inline-block;
+	float: right;
+	padding-left: 15px; 
+}
+.linkRemove:hover {
+	background: red;
+	color: white;
+	text-decoration: none;
+} 
